@@ -1,0 +1,617 @@
+
+
+/* border for header*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    color: #F4A261 ;
+    background-color: antiquewhite;
+}
+
+body.dark-theme {
+    background-color: #264653;
+}
+
+
+body.dark-theme .fa{
+    color: #17605f;
+}
+
+h1 {
+    color: azure;
+}
+
+body.dark-theme h1 {
+    color: #F4A261;
+}
+
+
+h2 {
+
+    color: #F4A261;
+}
+
+h3 {
+    text-align: center;
+    color: #F4A261;
+}
+
+h4{
+    font-size: 30px;
+    word-wrap: break-word;
+    text-decoration-line: underline;
+    padding: 5px;
+    color: #F4A261;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 20px;
+    padding: 5px;
+    display: inline;
+    margin: 10px;
+    color: azure;
+}
+
+body.dark-theme h5{
+    color: #F4A261;
+}
+
+p {
+    color: grey;
+    padding: 30 px;
+    margin: 50 px;
+}
+
+
+/* text-wrap for the paragraphs in cards*/
+p.text{
+    overflow-wrap: break-word;
+    text-align: left;
+    margin: 17px;
+}
+
+
+body.dark-theme .fa{
+    color:#F4A261;
+}
+
+p.polaroid {
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 17px;
+}
+/*implement an overlay over hover*/
+li.a {
+    font-size: 17px;
+    margin: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* updating the fonts on the button */
+li.b {
+    font-size: 20px;
+    word-spacing: normal 10px;
+}
+
+/*grid for website*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+  
+/*cointainer to hold objects/ info*/
+.grid-container > div {
+    text-align: center;
+}
+  
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+  
+.item2 {
+    margin-right: 20px;
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+  
+.item3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+  
+.item4 {
+    margin: 10px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+  
+.item5 {
+    grid-column:2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+  
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.item7 {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* title/ header*/
+.header {
+    background-color: #264653;
+    text-align: center;
+    border: 15px solid transparent;
+}
+
+body.dark-theme .header{
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+/*header border to seperate from drop down menu*/
+.topnav {
+    overflow: hidden;
+    background-color: azure;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 20px solid transparent;
+    border-image: url(images/border.png) 50% 80 round;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+
+body.dark-theme .topnav{
+    background-color: #24908F;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 20px solid transparent;
+    border-image: url(images/border.png) 50% 80 round;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px 0px rgba(215, 213, 213, 0.2);
+    z-index: 3;
+}
+
+
+/* for the drop down navigation*/
+.dropbtn {
+    position: sticky;
+    margin-top: -15px;
+    background-color: #245e5d;
+    border-color: #245e5d;
+    border: 0;
+    color: azure;
+    padding: 30px 75px;
+    font-size: 30px;
+    font-weight: 40px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+body.dark-theme .dropbtn {
+    background-color: azure;
+    border: azure;
+    color: #24908F;
+}
+
+.dropdown{
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+body.dark-theme .dropdown-content {
+    display: none;
+    font-family: Verdana, sans-serif;
+    position: absolute;
+    background-color: rgb(71, 88, 91);
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 216, 201);
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+body.dark-theme .dropdown-content a{
+    color: azure;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a{
+    color: azure;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+body.dark-theme .dropdown-content a:hover {
+    background-color: rgb(71, 88, 91);
+    border: 2px solid #24908F;
+}
+
+
+.dropdown-content a:hover {
+    background-color: rgb(181, 171, 160);
+    border: 2px solid #F4A261;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+body.dark-theme .dropdown:hover .dropbtn {
+    background-color: rgb(197, 215, 215);
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #264653;
+}
+
+/* end of  drop down navigation*/
+
+/*button 4 toggle dark-mode*/
+.switch {
+    margin: 50px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.btn-toggle {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.btn-toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #F4A261;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+
+}
+
+input:checked + .btn-toggle  {
+    background-color: grey;
+  }
+  
+input:focus + .btn-toggle  {
+    box-shadow: 0 0 1px grey;
+}
+  
+input:checked + .btn-toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/*images for home page*/
+.img-front {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    background-image: url(images/snippit_crickit_tumblrartist.png);
+    background-size: 100%;
+}
+
+.icons {
+    background-color: azure;
+}
+
+.fa {
+    color: azure;
+}
+
+body.dark-theme .fa {
+    color:#F4A261;
+}
+
+/* website page set up */
+/*columns*/
+.column{
+    float: left;
+    padding: 10 px;
+    width: 25% ;
+}
+
+/* side columns */
+.column-side{
+    width: 25%;
+}
+
+.column-middle{
+    width: fit-content;
+}
+
+  
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+body.dark-theme .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+  
+.media {
+    max-width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.dark-theme .media {
+    position: relative;
+    max-width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+.media img {
+    max-width: 100%;
+    height: auto;
+}
+
+body.dark-theme .media img {
+    max-width: 100%;
+    height: auto;
+}
+
+  
+.layer {
+opacity: 0;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10px;
+height: 90%;
+background: #fff;
+color: #151e3f;
+transition: all 0.9s ease;
+    p {
+        transition: all 0.9s ease;
+        transform: scale(0.1);
+    }
+}
+
+body.dark-theme .layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 90%;
+    background: #fff;
+    color: #151e3f;
+    transition: all 0.9s ease;
+        p {
+            transition: all 0.9s ease;
+            transform: scale(0.1);
+        }
+}
+
+.media:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+    p {
+      transform: scale(1);
+      transition: all 0.9s ease;
+    }
+}
+
+body.dark-theme .media:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+    p {
+      transform: scale(1);
+      transition: all 0.9s ease;
+    }
+}
+
+
+/* Add a card effect for articles */
+.card {
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+    background-color: white;
+    position: static;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+body.dark-theme .card{
+    box-shadow: 0px 8px 8px 0px rgba(215, 213, 213, 0.2);
+}
+
+
+
+/*images or seperate border for info*/
+.cardinfoborder {
+    background-color: #24908F;
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+body.dark-theme .cardinfoborder {
+    background-color: #245e5d;
+}
+
+
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* animated searchbar*/
+input[type=text] {
+    width: 130px;
+    height: 150px;
+    border: 20px black;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+    border: 5px black;
+}
+
+
+
+/* make sure icons + links are in the same line*/
+span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+/*hyperlink color changes*/
+a.seperate:link{
+    color:#151e3f;
+    text-decoration: none;
+    
+}
+
+a.seperate:visited{
+    color:rgb(154, 144, 132);
+    text-decoration: none;
+}
+
+  
+a.seperate:hover {
+    color:#F4A261;
+    text-decoration: none;
+}
+  
+
+/* footer*/
+.footer {
+    background-color: #264653;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+body.dark-theme .footer {
+    background-color: antiquewhite;
+}
+
+
+/* for phones*/
+@media (prefers-color-scheme: light) {
+    /* defaults to dark theme */
+    body {
+        --text-color: #F4A261;
+        background-color: antiquewhite;
+    }
+    
+    h1.light-theme {
+        font-size: 60px;
+        color: #F4A261;
+    }
+
+    .footer .light-theme {
+        background-color: grey;
+    }
+
+    body.light-theme {
+        --text-color: azure;
+        --bkg-color:  #264653;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content = "widt=device-width, inital-scale=1">
+        <meta http-equiv="X-UA-Comptaible" content="ie=edge"> 
+        
+        <title> Cosmo Collection </title>
+        <link rel="stylesheet" href="styles.css" id="theme-link">
+        <link rel="stylesheet" href="animate.css">
+
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <script src="https://kit.fontawesome.com/bc16b6b3f0.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body >
+
+        <div class="grid-container">
+            <div class="item1">
+                <div class="topnav">
+                    <a></a>
+                </div>
+                
+                <div class = "header"> 
+                        <h1> Cosmo Collection </h1>
+                </div>
+                
+                <div class="topnav">
+                    <a></a>
+                </div>
+            </div>
+
+            <div class="item2">
+                <div class = "column-side">
+                    <div class = "dropdown">
+                        <button class = "dropbtn"> <i class = "fas fa-certificate"> </i> </button>
+                        <div class = "dropdown-content">
+                            <li class = "b">
+                                <a href = "Home.html">
+                                    <i class = "fas fa-home"></i> Home
+                                </a> 
+                            </li>
+                            <li class = "b">
+                                <a href = "about.html">
+                                    <i class = "fas fa-heart"></i> Who Am I?
+                                </a> 
+                            </li>
+                            <li class = "b">
+                                <a href = "previousprojects.html"> 
+                                    <i class = "fas fa-folder"></i> Previous Projects 
+                                </a> 
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="item3">
+                <div class = "row">
+                    <div class = "card">
+                        <center>
+                        <h2> Cosmo Collection </h2>
+                            <audio controls autoplay muted>
+                                <source src="audio/aespa  Supernova MV.mp3" type="audio/mpeg">
+                            </audio>
+    
+                        <p class = "text"> Full Episode of Cosmos (the Neil Degrasse Tyson ver), 
+                            a great reccomendation to learn more about space.
+                        </p>
+                        <div class = "cardinfoborder">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pp--ICWk8mU?si=1bG7VrNID4CoYfNT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="item4">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class = "btn-toggle"></span>
+                </label>
+                <script>
+                        const btn = document.querySelector(".btn-toggle");
+                        const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+                        const currentTheme = localStorage.getItem("theme");
+                        if (currentTheme == "dark") {
+                        document.body.classList.toggle("dark-theme");
+                        } else if (currentTheme == "light") {
+                        document.body.classList.toggle("light-theme");
+                        }
+
+                        btn.addEventListener("click", function () {
+                        if (prefersLightScheme.matches) {
+                            document.body.classList.toggle("light-theme");
+                            var theme = document.body.classList.contains("light-theme")
+                            ? "light"
+                            : "dark";
+                        } else {
+                            document.body.classList.toggle("dark-theme");
+                            var theme = document.body.classList.contains("dark-theme")
+                            ? "dark"
+                            : "light";
+                        }
+                        localStorage.setItem("theme", theme);
+                        });
+                </script>
+                <div class="card">
+                    <div class = "blinkimg">
+                    </div>
+                    <a target="_blank" href="https://science.nasa.gov/solar-system/" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+                    <img src="images/nasalogo.png" alt="nasalogo" width = "200" height="170">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item5">
+                <div class = "card">
+                    <div class = "cardinfoborder">
+                        <div class = "wrapper">
+                            <div class="media">
+                                <div class="layer">
+                                    <a target="_blank" href="#section-supernova" onclick="on()">
+                                    <p>What is a supernova?</p>
+                                    </a>
+                                </div>
+                                    <img src="images/supernova wallpaper.webp" alt="supernovae look up nasa" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+                                    
+                            </div>
+
+                            <div class="media">
+                                <div class="layer">
+                                    <a target="_blank" href="#section-stars">
+                                    <p> What are stars? </p>
+                                    </a>
+                                </div>
+                                <img src="images/stars_npr.jpg" alt="stars" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+                            </div>
+
+                            <div class="media">
+                                
+                                <div class="layer">
+                                    <a target="_blank" href="#section-meteorite">
+                                    <p> What are meteorites? </p>
+                                    </a>
+                                </div>
+                                    <img src="images/meteoroids_statesman.jpg" alt="hiking" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+                            </div>     
+                        </div>
+                    </div>
+                </div> 
+                <div class = "card">
+                    <h3 id="section-supernova">
+                        <a class = "seperate" target ="_blank" href="https://en.wikipedia.org/wiki/Supernova">
+                        What is a supernova?
+                    </h3>
+                    </a>
+                    <p class = "text"> As the song states above, a supernova is a the explosion caused by the collapse of a giant star.
+                        Think of it as the sonic boom of a plane.
+                    </p>
+                    <p class = "text">
+                        We actually haven't taken a photo of a supernova! Most are 3-D models of what an explosion would look like.
+
+                    </p>
+                    <p class = "text">
+                        There is large amounts of gravity pushed upon the star, while nuclear force keeps the spherical
+                        shape of the star!
+                    </p>
+                    <p class = "text">
+                        Stars can leave behind nebulae!
+                    </p>
+                </div>
+
+                <div class = "card">
+                    <h3 id="section-stars"> 
+                    <a class = "seperate" target = "_blank" href = "https://en.wikipedia.org/wiki/Star#References">
+                        What are stars?
+                    </h3>
+                    </a>
+                    <p class ="text"> Stars are big balls of gas consisting of mostly hydrogen. They use nuclear fusion to produce the light
+                        you see in the sky!
+                    </p>
+                    <p class="text">
+                        How do stars work? They form by the collapse of a gaseous nebula comprising of majority hydrogen.
+                    </p>
+                    <p class = "text">
+                        Astronomers are able to determine aspects of the star like mass, age, metallicity, from their
+                        observations of brightness, electronmagnetic spectrum and it's movement in the sky.
+                    </p>
+                    <p class = "text">
+                        Stars can actually form a orbital star system with another star they are called binary stars!
+                    </p>
+                </div>
+
+                <div class = "card">
+                    <h3 id = "section-meteorite"> 
+                        <a class ="seperate" target="_blank" href ="https://science.nasa.gov/solar-system/meteors-meteorites/facts/">
+                            What are meteorites?
+                        </a>
+                    </h3>
+                        
+                    <p class = "text"> They are giant rocks that produce either during planetary formation or remnants of interactions 
+                        between planets. Some of them even land on earth.
+                    </p>
+                    <p class = "text">
+                        Meteorites can tell us a lot of the ways planets form by their material.
+                    </p>
+                    <p class = "text">
+                        Meteorites can be broken up into several categories based on their elemental composition.
+                    </p>
+                    <p class = "text">
+                        Some meteors happen in intervals that scientists have been able to track.
+                    </p>
+                
+                </div>  
+            </div>
+
+            <div class="item6">
+                <div class ="footer">
+                    <h2>
+                        <span class = "a">
+                        <a class = "footer" href = "https://github.com/goldfishcrackers">
+                            <i class ="fa fa-github" style="font-size:30px;"></i>
+                        </a>
+                        </span>
+                        <span class = "a">
+                            <a class = "footer" href = "https://www.facebook.com/nianticlabs/">
+                            <i class ="fa fa-facebook-square" style="font-size:30px;"></i>
+                            </a>
+                        </span>
+                        <span class = "a">
+                            <a class = "footer" href = "https://www.youtube.com/nianticlabs">
+                                <i class ="fa fa-youtube-play" style="font-size:30px;"></i>
+                            </a>
+                        </span>
+                    
+                        <span class = "a">
+                            <a class = "footer" href = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                                <i class="fa fa-linkedin-square" style="font-size:30px;"></i>
+                            </a>
+                        </span>
+                    </h2>
+                    <span class="a">
+                        <a href = "about.html">
+                            <h5> About </h5>
+                        </a>
+                        <a href = "legal.html">
+                            <h5> Legal </h5>
+                        </a>
+                        <a href = "privacy.html">
+                            <h5> Privacy </h5>
+                        </a>
+                        <a href = "help.html">
+                            <h5> Help </h5>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
